@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <!-- header section -->
     <header>
 
         <div class="header-container">
@@ -21,7 +21,7 @@
             <nav>
                 <ul class="nav-list">
                     <li><a href="#hero">Home</a></li>
-                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#aboutus">AboutUs</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -31,8 +31,10 @@
 
     </header>
 
+    <!-- main section -->
     <main class="main-grid">
 
+        <!-- Hero Section -->
         <section id="hero" class="hero" aria-labelledby="hero-title">
 
             <div class="hero-inner">
@@ -51,6 +53,7 @@
 
         </section>
         
+        <!-- Aboutus Section -->
         <section id="aboutus">
             <article>
                 <h2>About Us</h2>
@@ -65,27 +68,25 @@
             </article>
         </section>
        
+        <!-- Services Section -->
         <section id="services" class="section alt" aria-labelledby="services-title">
 
             <h2 id="services-title">Services</h2>
             <ul class="services-grid">
                 <li>
                 <article class="card">
-                    <!-- <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="20" cy="20" r="6" fill="currentColor"/></svg> -->
                     <h3>Accessibility audits</h3>
                     <p>We review your site against WCAG and give you a prioritized list of fixes.</p>
                 </article>
                 </li>
                 <li>
                 <article class="card">
-                    <!-- <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40"><rect x="4" y="10" width="32" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="3"/><path d="M10 17h4M18 17h4M26 17h4M12 24h16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg> -->
                     <h3>Accessible web design</h3>
                     <p>Responsive pages with clear structure, readable type, and visible focus states.</p>
                 </article>
                 </li>
                 <li>
                 <article class="card">
-                    <!-- <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40"><path d="M8 21l8 8 16-18" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> -->
                     <h3>Ongoing accessibility support</h3>
                     <p>Regular check-ups and updates, so your site stays accessible as you add new pages and features.</p>
                 </article>
@@ -94,36 +95,36 @@
 
         </section>
         
-
+       <!-- Contact Section -->
        <section id="contact" class="section" aria-labelledby="contact-title">
 
             <h2 id="contact-title">Contact</h2>
-            <form id="contact-form" novalidate>
+            <form id="contact-form">
                 <p class="note">All fields are required.</p>
 
                 <div class="field">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" autocomplete="name" placeholder="john" 
+                <input type="text" id="name" name="name" autocomplete="name" placeholder="john" aria-required="true"
                     required aria-describedby="name-error">
                 <p class="error" id="name-error"></p>
                 </div>
 
                 <div class="field">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" autocomplete="email"  placeholder="john@gmail.com" aria-describedby="email-hint email-error">
+                <input type="email" id="email" name="email" required aria-required="true" autocomplete="email"  placeholder="john@gmail.com" aria-describedby="email-hint email-error">
                 <p class="hint" id="email-hint">We only use this to reply to you.</p>
                 <p class="error" id="email-error"></p>
                 </div>
 
                 <div class="field">
                 <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" placeholder="Test Subject" aria-describedby="subject-error">
+                <input type="text" id="subject" name="subject" required aria-required="true" ="Test Subject" aria-describedby="subject-error">
                 <p class="error" id="subject-error"></p>
                 </div>
 
                 <div class="field">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Test Message" required aria-describedby="message-hint message-error"></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Test Message" required aria-required="true" aria-describedby="message-hint message-error"></textarea>
                 <p class="hint" id="message-hint">Tell us a little about your project.</p>
                 <p class="error" id="message-error"></p>
                 </div>
@@ -135,7 +136,8 @@
         </section>
 
     </main>
-
+    
+    <!-- footer section -->
     <footer class="footer">
 
         <div class="footer-content">
