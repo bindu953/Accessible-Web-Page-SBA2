@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Design Co.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="header-container">
+
+            <div class="logo">
+                <img src="./images/placeholder_logo.jpg"
+                    alt="Accessible Design Co. logo">
+                <span>Accessible Design Co.</span>
+            </div>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main class="main-grid">
+
+        <section id="hero" class="hero" aria-labelledby="hero-title">
+
+            <div class="hero-inner">
+
+                <h1 id="hero-title">Websites that work for everyone</h1>
+
+                <p class="bold-class">
+                    We design and build sites that people can read,
+                    navigate, and use, whether they use a mouse,
+                    a keyboard, or a screen reader.
+                </p>
+
+                <a href="#contact" class="hero-button">Contact Us</a>
+
+            </div>
+
+        </section>
+        
+        <section id="aboutus">
+            <article>
+                <h2>About Us</h2>
+                <p> 
+                    People first, We design for real users and their different needs.
+                    Every site follows WCAG accessibility guidelines.
+                </p>
+                <p> 
+                    We check with keyboards, screen readers, and contrast tools.
+                    We explain our work in plain language, with no jargon.
+                </p>
+            </article>
+        </section>
+       
+        <section id="services" class="section alt" aria-labelledby="services-title">
+
+            <h2 id="services-title">Services</h2>
+            <ul class="services-grid">
+                <li>
+                <article class="card">
+                    <!-- <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="20" cy="20" r="6" fill="currentColor"/></svg> -->
+                    <h3>Accessibility audits</h3>
+                    <p>We review your site against WCAG and give you a prioritized list of fixes.</p>
+                </article>
+                </li>
+                <li>
+                <article class="card">
+                    <!-- <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40"><rect x="4" y="10" width="32" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="3"/><path d="M10 17h4M18 17h4M26 17h4M12 24h16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg> -->
+                    <h3>Accessible web design</h3>
+                    <p>Responsive pages with clear structure, readable type, and visible focus states.</p>
+                </article>
+                </li>
+                <li>
+                <article class="card">
+                    <!-- <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40"><path d="M8 21l8 8 16-18" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> -->
+                    <h3>Ongoing accessibility support</h3>
+                    <p>Regular check-ups and updates, so your site stays accessible as you add new pages and features.</p>
+                </article>
+                </li>
+            </ul>
+
+        </section>
+        
+
+       <section id="contact" class="section" aria-labelledby="contact-title">
+
+            <h2 id="contact-title">Contact</h2>
+            <form id="contact-form" novalidate>
+                <p class="note">All fields are required.</p>
+
+                <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" placeholder="john" 
+                    required aria-describedby="name-error">
+                <p class="error" id="name-error"></p>
+                </div>
+
+                <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email"  placeholder="john@gmail.com" aria-describedby="email-hint email-error">
+                <p class="hint" id="email-hint">We only use this to reply to you.</p>
+                <p class="error" id="email-error"></p>
+                </div>
+
+                <div class="field">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Test Subject" aria-describedby="subject-error">
+                <p class="error" id="subject-error"></p>
+                </div>
+
+                <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Test Message" required aria-describedby="message-hint message-error"></textarea>
+                <p class="hint" id="message-hint">Tell us a little about your project.</p>
+                <p class="error" id="message-error"></p>
+                </div>
+
+                <button class="button" type="submit">Send message</button>
+                <p id="form-status" class="status" role="status" aria-live="polite"></p>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+                <h3>Accessible Design Co.</h3>
+                <p>Making websites easy for everyone to use.</p>
+            </div>
+
+            <div>
+                <h3>Contact Us</h3>
+                <p>&#9993; Email: info@example.com</p>                
+            </div>
+
+            <div>
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.linkedin.com/">LinkedIn</a>
+            </div>
+
+        </div>
+
+        <hr>
+        <p>&copy; 2026 Accessible Design Co. All rights reserved.</p>
+
+    </footer>
+    
+</body>
+</html>

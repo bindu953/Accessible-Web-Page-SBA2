@@ -1,0 +1,242 @@
+body
+{
+    font-family: Arial;
+    background-color: #F0F7FF;
+    color: #1e293b;
+}
+
+/*header styling */
+.header-container
+{
+    background-color:  #164E78;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo span {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo img
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.nav-list
+{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    /* border-radius: 5px; */
+}
+
+/* Hero Section */
+
+.hero {
+    background-image:
+         linear-gradient(
+            rgba(255, 255, 255, 0.84),
+            rgba(255, 255, 255, 0.48)
+        ), 
+        url("./images/digital_accessibility.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 420px;
+    padding: 60px 20px; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-inner
+{
+    max-width: 750px;
+}
+
+.hero p 
+{
+    font-weight: 500;
+}
+
+.hero h1 {
+    color: #123b66;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #243b53;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #164E78;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background-color: #0B3557;
+}
+
+
+/* Main Grid */
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+   }
+
+/* Each section takes the full width */
+.hero {
+    grid-column: 1 / -1;
+}
+
+#aboutus {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+#services {
+    grid-column: 1 / -1;
+    text-align: center;
+    }
+
+#contact {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+/* Service Cards */
+.services-grid .card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    height: 100%;
+}
+
+/* Form Fields */
+
+.field {
+    margin-bottom: 20px;
+}
+
+.field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #123b66;
+}
+
+/* Send Message Button */
+
+.button {
+    background-color: #155a96;
+    color: white;
+
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0d355a;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .hero,
+    #aboutus,
+    #services,
+    #contact {
+        grid-column: 1;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* footer styling */
+
+.footer {
+    background-color: #164E78;
+    color: white;
+    padding: 35px 30px 20px;
+    text-align: center;
+}
+
+.footer-content
+{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+.footer a:hover {
+    color: #ffdd75;
+    text-decoration: underline;
+}
