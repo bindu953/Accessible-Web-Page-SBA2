@@ -30,7 +30,7 @@ My website includes the following sections:
 
 I used Flexbox for the navigation bar and footer and CSS Grid for the services section.
 
-I also used media queries to adjust the layout for different screen sizes, including desktops, tablets, and mobile phones.
+I also used media queries to adjust the layout for different screen sizes.
 
 ## Accessibility
 
